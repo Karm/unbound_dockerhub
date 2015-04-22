@@ -1,0 +1,13 @@
+# On host, place e.g. in /etc/systemd/system/multi-user.target.wants/unbound-container.service
+[Unit]
+Description=Unbound container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker run -p 0.0.0.0:53:53 -p 0.0.0.0:53:53/udp -i --name unbound karm/unbound-dockerhub
+ExecStop=/usr/bin/docker stop -t 2 unbound ; /usr/bin/docker rm -f unbound
+
+[Install]
+WantedBy=local.target
