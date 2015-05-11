@@ -2,7 +2,7 @@
 Unbound dev build on Dockerhub; build from sources.
 
 # Description
-This is a devel build of Unbound server with Python scripting support. It compiles from [these sources](https://github.com/Karm/unbound/tree/docker_dev) and it runs in Debug mode, which is not, by default, suitable for production. One may build images based on it and alter the configuration though.
+This is a devel build of Unbound server with Python scripting support. It compiles from [these sources](https://github.com/Karm/unbound/tree/master) and it runs in Debug mode, which is not, by default, suitable for production. One may build images based on it and alter the configuration though.
 
 # Example usage
 
