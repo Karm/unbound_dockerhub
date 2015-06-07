@@ -1,4 +1,4 @@
-FROM fedora:20
+FROM fedora:22
 MAINTAINER Michal Karm Babacek <karm@email.cz>
 
 # TODO: We install stuff that's superfluous at runtime.
